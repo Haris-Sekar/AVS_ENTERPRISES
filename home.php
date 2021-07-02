@@ -64,38 +64,13 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
       <li><a href="#" id="black-text">Add Item</a><hr></li>
       <li><a href="#" id="black-text">Add Sales Bill</a><hr></li>
       <li><a href="#" id="black-text">Add Purchase Bill</a><hr></li>
-      <li><a href="#" id="black-text">Add Users</a></li>
+      <li><a href="#" id="black-text">Add Users</a><hr></li>
+      <li><a href="coustomer_details.php" id="black-text"> Customer Details</a><hr></li>
+      <li><a href="itemdetails.php" id="black-text">View Item Details</a><hr></li>
+      <li><a href="#" id="black-text">Reports</a><hr></li>
+      <li><a href="pricelist.php" id="black-text">Price List</a><hr></li>
+      <li><a href="update.php" id="black-text">update</a></li>
     </ul>
-    <span >
-      <div class="task-list" >
-         <a href="coustomer_details.php" id="black-text"> Customer Details</a>
-      </div>
-    </span>
-    <span >
-      <div class="task-list">
-      <a href="itemdetails.php" id="black-text">View Item Details</a>
-      </div>
-    </span>
-    <span>
-
-      <div class="task-list">
-      <a href="#" id="black-text">Reports</a>
-      </div>
-    </span>
-    <span>
-      <div class="task-list">
-      <a href="pricelist.php" id="black-text">Price List</a>
-      </div>
-    </span>
-    <span >
-      <div class="task-list">
-      <a href="#" id="black-text">update</a>
-      </div>
-    </span>
-    
-
-
-
 </body>
 
 </html>

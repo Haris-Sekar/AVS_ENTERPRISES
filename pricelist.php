@@ -6,7 +6,6 @@ include("frd.php");
   <tr>
     <th>#</th>
     <th>Price List Year</th>
-    <th>View</th>
     <th>Download</th>
   </tr>
   <tr>
@@ -17,9 +16,8 @@ include("frd.php");
       while($row = mysqli_fetch_array($result)) { ?>
       <tr>
           <td><?php echo $i++; ?></td>
-          <td><?php echo $row['price_list_change_date']; ?></td>
-          <td><a href="uploads/<?php echo $row['pdf']; ?>" target="_blank">View</a></td>
-          <td><a href="uploads/<?php echo $row['pdf']; ?>" download>Download</td>
+          <td><?php echo $row['file_name']; ?></td>
+          <td><a href="pdf/<?php echo $row['pdf_file']; ?>" download id="black-text1">Click</a></td>
       </tr>
       <?php } ?>
     

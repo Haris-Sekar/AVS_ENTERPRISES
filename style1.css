@@ -110,10 +110,11 @@ body{
       padding-right: 30px;
       padding-top: 20px;
       padding-bottom: 20px;
-      height: 300px;
+      height: 550px;
       border-radius: 15px;
       box-sizing:border-box;
   }
+  
   .dashbord{
       position: relative;
       float: left;
@@ -248,8 +249,82 @@ body{
   font-family: 'Cairo', sans-serif;
   border: 2px solid black;
   width: 500px;
+  margin: auto;
+  position: relative;
+  top: 60px;
+  
+}
+.update-btns{
   position: relative;
   top: 50px;
-  left: 700px;
+  left: 900px;
+  border: 3px black solid;
+  height: 500px;
+  width: 300px;
+  border-radius: 10px;
+}
+#update-btn{
+  margin: 9px;
+  background-color: #008CBA;
+    height: 55px;
+    width: 280px;
+    border-radius: 5px;
+    font-family: 'Cairo', sans-serif;
+    border: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+
+}
+#black-text-btn{
+  color: black;
+}
+#update-btn:hover{
+background-color:#6154fe;
+color: white;
+}
+.pricelist-update-form{
+
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+  border: 2px solid transparent;
+  height: 250px;
+  width: 400px;
+  margin: auto;
+  position: relative;
+  top: 200px;
+  padding: 25px;
+  background-color: #f5f3f4;
+  font-style: oblique;
+  text-decoration: solid;
+
+}
+.btn-update-pricelist-submit{
+  background-color: #008CBA;
+    height: 45px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    float: right;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    border: none;
+}
+.btn-update-pricelist-submit:hover{
+  background-color:#4CAF50 ;
+  cursor: pointer;
+}
+.text-feild{
+  height: 30px;
+  width: 200px;
   
+}
+#comment{
+  position: relative;
+  top: -30px;
+  color: red;
+}
+#black-text1{
+  color: blue;
 }
