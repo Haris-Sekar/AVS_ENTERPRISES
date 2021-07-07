@@ -13,7 +13,6 @@ body{
     overflow: hidden;
     background-color: #333;
     color: white;
-    position: sticky;
   }
 
   
@@ -110,7 +109,7 @@ body{
       padding-right: 30px;
       padding-top: 20px;
       padding-bottom: 20px;
-      height: 550px;
+      height: 620px;
       border-radius: 15px;
       box-sizing:border-box;
   }
@@ -327,4 +326,22 @@ color: white;
 }
 #black-text1{
   color: blue;
+}
+.form-additem{
+  border: 2px black solid;
+  height: 300px;
+  width: 500px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  padding: 50px;
+
+}
+.form-items{
+  position: relative;
+  left: -80px;
+  top: 60px;
+  text-align: right;
 }

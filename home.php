@@ -30,6 +30,7 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
 </head>
 
 <body>
+<div class="navbarsticky">
   <ul class="navbar">
     <li><h1>AVS ENTERPRISES</h1></li>
     <div class="navitems">
@@ -39,9 +40,19 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
   </ul>
   <button class="btn-logout"><a href="logout.php">Logout</a></button>
   <span>
+  </div>
     <div class="dashbord">
     <div class="dash-text">
     Amount Sold
+    <?php
+      $totsold=0;
+      $qurey1="SELECT * FROM sales_bill";
+      $result1=mysqli_query($conn,$qurey1);
+      while($row=mysqli_fetch_array($result1,MYSQLI_ASSOC)){
+        $totsold=$totsold+$row['net_amt'];
+      }
+    ?>
+    <h2>&#x20b9;<?php echo $totsold;?></h2>
     </div>
     </div>
   </span>
@@ -49,20 +60,39 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
     <div class="dashbord">
       <div class="dash-text">
       Total Amount Outstanding
+      <?php
+      $totsold=0;
+      $qurey1="SELECT * FROM customer_balance_details";
+      $result1=mysqli_query($conn,$qurey1);
+      while($row=mysqli_fetch_array($result1,MYSQLI_ASSOC)){
+        $totsold=$totsold+$row['balance'];
+      }
+    ?>
+    <h2>&#x20b9;<?php echo $totsold;?></h2>
       </div>
     </div>
   </span>
   <span>
     <div class="dashbord">
       <div class="dash-text">
-        Total Amount Outstanding for<br> Ever Fresh: 
+        Total Amount Outstanding for Companies: 
+          <?php
+      $totsold=0;
+      $qurey1="SELECT * FROM buyer_compnay_reg";
+      $result1=mysqli_query($conn,$qurey1);
+      while($row=mysqli_fetch_array($result1,MYSQLI_ASSOC)){
+        $totsold=$totsold+$row['balance'];
+      }
+    ?>
+    <h2>&#x20b9;<?php echo $totsold;?></h2>
       </div>
     </div>
   </span>
     <ul class="menu-list">
       <li><a href="customer_register.php" id="black-text">Add Customer</a><hr></li>
-      <li><a href="#" id="black-text">Add Item</a><hr></li>
-      <li><a href="#" id="black-text">Add Sales Bill</a><hr></li>
+      <li><a href="buyer_register.php" id="black-text">Add Buyer Company</a><hr></li>
+      <li><a href="additem.php" id="black-text">Add Item</a><hr></li>
+      <li><a href="./addsalesbill.php" id="black-text">Add Sales Bill</a><hr></li>
       <li><a href="#" id="black-text">Add Purchase Bill</a><hr></li>
       <li><a href="#" id="black-text">Add Users</a><hr></li>
       <li><a href="coustomer_details.php" id="black-text"> Customer Details</a><hr></li>

@@ -2,24 +2,12 @@
 include("frd.php");
 
 ?>
+<button class="btn-home"><a href="home.php">Home</a></button>
+<br>
 <h2 id="filter-text">Filters</h2+>
 <form action="" method="post">
 <input type="search" name="name_filter" placeholder="Search by Name" class="searchbar" autocomplete="off"> 
-<input type="search" name="area_filter" placeholder="Search by Area" class="filter-area" autocomplete="off"><br>
-<h3 id="filter-text">By Amount</h3>
-
-<div class="filter-balance">
-<input type="radio" id="filter-balance" name="balance" value="10000-20000">
-<label for="balance">10000-20000</label><br>
-<input type="radio" id="filter-balance" name="balance" value="10000-20000">
-<label for="balance">20000-30000</label><br>
-<input type="radio" id="filter-balance" name="balance" value="10000-20000">
-<label for="balance">30000-40000</label><br>
-<input type="radio" id="filter-balance" name="balance" value="10000-20000">
-<label for="balance">40000-50000</label><br>
-<input type="radio" id="filter-balance" name="balance" value="10000-20000">
-<label for="balance">50000 and Above</label><br>
-</div>
+<input type="search" name="area_filter" placeholder="Search by Area" class="filter-area" autocomplete="off"><br><br>
 <input type="submit" name="submit" value="Apply filter" class="btn-search"> 
 </form>
 <table>

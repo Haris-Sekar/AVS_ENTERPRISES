@@ -29,14 +29,17 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
 </head>
 
 <body>
+<div class="navbarsticky">
   <ul class="navbar">
     <li><h1>AVS ENTERPRISES</h1></li>
     <div class="navitems">
     <li><h4><div class="nav1" >User:  <?php echo $user; ?></div></h4></li>
     <li><h4><div class="nav2" >Authority:  <?php echo $autho;  ?></div></h4></li>
     </div>
+    
   </ul>
-  <button class="btn-logout"><a href="logout.php">Logout</a></button>
+ <button class="btn-logout"><a href="logout.php">Logout</a></button>
+ </div>
 </body>
 
 </html>
