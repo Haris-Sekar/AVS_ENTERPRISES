@@ -31,7 +31,7 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
 <body>
 <div class="navbarsticky">
   <ul class="navbar">
-    <li><h1>AVS ENTERPRISES</h1></li>
+    <li><h1><a href="./home.php" id="navbar-a"> AVS ENTERPRISES</a></h1></li>
     <div class="navitems">
     <li><h4><div class="nav1" >User:  <?php echo $user; ?></div></h4></li>
     <li><h4><div class="nav2" >Authority:  <?php echo $autho;  ?></div></h4></li>
@@ -40,6 +40,47 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
   </ul>
  <button class="btn-logout"><a href="logout.php">Logout</a></button>
  </div>
+ <div class="dropdown-menus">
+    <div class="navbar-menus">
+      <button class="dropbtn">Add</button>
+      <div class="dropdown-content">
+      <a href="customer_register.php">Add Customer</a><hr>
+      <a href="buyer_register.php">Add Buyer Company</a><hr>
+      <a href="additem.php">Add Item</a><hr>
+      <a href="./addsalesbill.php">Add Sales Bill</a><hr>
+      <a href="./addpurchacebill.php">Add Purchase Bill</a><hr>
+      <a href="#">Add Users</a>
+      </div>
+    </div>
+    <div class="navbar-menus">
+      <button class="dropbtn">View</button>
+      <div class="dropdown-content">
+      <a href="coustomer_details.php"> Customer Details</a><hr>
+      <a href="company_details.php"> Company Details</a><hr>
+      <a href="itemdetails.php">View Item Details</a><hr>
+      <a href="#">user details</a><hr>
+      <a href="pricelist.php">Price List</a>
+      </div>
+    </div>
+    <div class="navbar-menus">
+      <button class="dropbtn">Update</button>
+      <div class="dropdown-content">
+      <a href="#" >Customer Deatils</a><hr>
+      <a href="#" >Sales Bill</a><hr>
+      <a href="#" >Purchase Bill</a><hr>
+      <a href="./pricelist-update.php" >Price List</a>
+      </div>
+    </div>
+    <div class="navbar-menus">
+      <button class="dropbtn">Reports</button>
+      <div class="dropdown-content">
+      <a href="#" >Customer Deatils</a><hr>
+      <a href="#" >Sales Bill</a><hr>
+      <a href="#" >Purchase Bill</a>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

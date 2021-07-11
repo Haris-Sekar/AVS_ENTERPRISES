@@ -6,7 +6,6 @@ include("frd.php");
     <style>
         * {
   box-sizing: border-box;
-  font-family: 'Cairo', sans-serif;
 
 }
 
@@ -16,11 +15,15 @@ input[type=text], select, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  font-family: 'Cairo', sans-serif;
+
 }
 
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
+  font-family: 'Cairo', sans-serif;
+
 }
 
 input[type=submit] {
@@ -40,12 +43,16 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #4CAF50;
     color: white;
+    font-family: 'Cairo', sans-serif;
+
 }
 
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  font-family: 'Cairo', sans-serif;
+
 }
 
 .col-25 {

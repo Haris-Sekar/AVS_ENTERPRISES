@@ -39,6 +39,48 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
     </div>
   </ul>
   <button class="btn-logout"><a href="logout.php">Logout</a></button>
+  <div class="dropdown-menus">
+    <div class="navbar-menus">
+      <button class="dropbtn">Add</button>
+      <div class="dropdown-content">
+      <a href="customer_register.php">Add Customer</a><hr>
+      <a href="buyer_register.php">Add Buyer Company</a><hr>
+      <a href="additem.php">Add Item</a><hr>
+      <a href="./addsalesbill.php">Add Sales Bill</a><hr>
+      <a href="./addpurchacebill.php">Add Purchase Bill</a><hr>
+      <a href="#">Add Users</a>
+      </div>
+    </div>
+    <div class="navbar-menus">
+      <button class="dropbtn">View</button>
+      <div class="dropdown-content">
+      <a href="coustomer_details.php"> Customer Details</a><hr>
+      <a href="company_details.php"> Company Details</a><hr>
+      <a href="itemdetails.php">View Item Details</a><hr>
+      <a href="#">user details</a><hr>
+      <a href="pricelist.php">Price List</a>
+      </div>
+    </div>
+    <div class="navbar-menus">
+      <button class="dropbtn">Update</button>
+      <div class="dropdown-content">
+      <a href="#" >Customer Deatils</a><hr>
+      <a href="#" >Sales Bill</a><hr>
+      <a href="#" >Purchase Bill</a><hr>
+      <a href="./pricelist-update.php" >Price List</a>
+      </div>
+    </div>
+    <div class="navbar-menus">
+      <button class="dropbtn">Reports</button>
+      <div class="dropdown-content">
+      <a href="#" >Customer Deatils</a><hr>
+      <a href="#" >Sales Bill</a><hr>
+      <a href="#" >Purchase Bill</a>
+      </div>
+    </div>
+  </div>
+
+
   <span>
   </div>
     <div class="dashbord">
@@ -88,19 +130,6 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
       </div>
     </div>
   </span>
-    <ul class="menu-list">
-      <li><a href="customer_register.php" id="black-text">Add Customer</a><hr></li>
-      <li><a href="buyer_register.php" id="black-text">Add Buyer Company</a><hr></li>
-      <li><a href="additem.php" id="black-text">Add Item</a><hr></li>
-      <li><a href="./addsalesbill.php" id="black-text">Add Sales Bill</a><hr></li>
-      <li><a href="#" id="black-text">Add Purchase Bill</a><hr></li>
-      <li><a href="#" id="black-text">Add Users</a><hr></li>
-      <li><a href="coustomer_details.php" id="black-text"> Customer Details</a><hr></li>
-      <li><a href="itemdetails.php" id="black-text">View Item Details</a><hr></li>
-      <li><a href="#" id="black-text">Reports</a><hr></li>
-      <li><a href="pricelist.php" id="black-text">Price List</a><hr></li>
-      <li><a href="update.php" id="black-text">update</a></li>
-    </ul>
 </body>
 
 </html>

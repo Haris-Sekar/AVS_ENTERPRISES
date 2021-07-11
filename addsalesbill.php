@@ -23,7 +23,7 @@ include('frd.php');
     
     ?></select><br>
     <label>Bill Value Without GST:</label>
-    <input type="number" name="amtwgst" class="text-feild" autocomplete="off"><br>
+    <input type="number" name="amtwgst" placeholder="&#x20b9" class="text-feild" autocomplete="off"><br>
     <label>Payment method:</label>
     <input type="radio" name="payment" value="credit">Credit<input type="radio" name="payment" value="cash">Cash<br>
     <input type="submit" name="submit" value="Add Bill" class="btn-update-pricelist-submit">    
@@ -39,22 +39,22 @@ if(isset($_POST['submit'])){
     $paymtd=$_POST['payment'];
     ?>
     <div class="netamt">
-        <h2><?php echo $netvalue; ?></h2>
+    <h3>Net Amount: &#x20b9;<?php echo $netvalue; ?></h3><h6 id="tax">(inclusive of all tax)</h6>
     </div>
 
     
     <?php
     $qurey1="INSERT INTO sales_bill(`bill_no`, `shop_name`, `amt_withoutgst`, `net_amt`) VALUES ('$bill','$shop','$amtwgst','$netvalue') ";
     $result1=mysqli_query($conn,$qurey1);
-    if($result){
+    if(!mysqli_error($conn)){
 
         ?>
-        <h2>Bill Added!</h2>
+        <h2 id="stsmsg">Status:<font color="green">Bill Added!</font></h2>
         <?php
     }
     else{
         ?>
-        <h2>Bill Number already exist</h2>
+        <h2 id="stsmsg">Status:<font color="red"> Bill Number already exist!</font></h2>
         <?php
     }
     if($paymtd!='cash'){
