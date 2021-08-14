@@ -1,7 +1,6 @@
 <?php
 include('frd.php');
 ?>
-<button class="btn-home"><a href="home.php">Home</a></button>
 <form action="" method="post" class="form-additem">
     <div class="form-items">
     <label>Item Name:</label>

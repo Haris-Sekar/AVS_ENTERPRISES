@@ -23,6 +23,8 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
 <head>
 <link rel="stylesheet" href="style1.css">
   <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/9bf6eecd68.js" crossorigin="anonymous"></script>
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AVS ENTERPRISES</title>
@@ -49,7 +51,9 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
       <a href="additem.php">Add Item</a><hr>
       <a href="./addsalesbill.php">Add Sales Bill</a><hr>
       <a href="./addpurchacebill.php">Add Purchase Bill</a><hr>
-      <a href="#">Add Users</a>
+      <a href="./addpurchacerecipt.php">Purchase Payment Recipt</a><hr>
+      <a href="./addsalesrecipt.php">Sales Payment Recipt</a><hr>
+      <a href="./adduser.php">Add Users</a>
       </div>
     </div>
     <div class="navbar-menus">
@@ -58,6 +62,8 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
       <a href="coustomer_details.php"> Customer Details</a><hr>
       <a href="company_details.php"> Company Details</a><hr>
       <a href="itemdetails.php">View Item Details</a><hr>
+      <a href="itemdetails.php">View Sales Bill</a><hr>
+      <a href="itemdetails.php">View Purchase Bill</a><hr>
       <a href="#">user details</a><hr>
       <a href="pricelist.php">Price List</a>
       </div>
@@ -65,7 +71,7 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
     <div class="navbar-menus">
       <button class="dropbtn">Update</button>
       <div class="dropdown-content">
-      <a href="#" >Customer Deatils</a><hr>
+      <a href="./update_cus_det.php" >Customer Deatils</a><hr>
       <a href="#" >Sales Bill</a><hr>
       <a href="#" >Purchase Bill</a><hr>
       <a href="./pricelist-update.php" >Price List</a>

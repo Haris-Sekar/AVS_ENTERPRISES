@@ -141,7 +141,7 @@ if(isset($_POST['submit'])){
     $bal=$_POST['bal'];
     $qurey="INSERT INTO customer_details(`shop_name`, `phone_number`, `gst_number`, `area_name`, `address`) VALUES ('$name','$phone','$gst','$area','$address')";
     $result=mysqli_query($conn,$qurey);
-    $qurey1="INSERT INTO customer_balance_details(`shop_name`, `balance`) VALUES ('$name','$bal')";
+    $qurey1="INSERT INTO customer_balance_details(`shop_name`, `balance`,'gst_number') VALUES ('$name','$bal','$gst')";
     $result1=mysqli_query($conn,$qurey1);
     if($result and $result1){
         header("location:home.php");

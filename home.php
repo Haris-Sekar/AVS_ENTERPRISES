@@ -48,7 +48,9 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
       <a href="additem.php">Add Item</a><hr>
       <a href="./addsalesbill.php">Add Sales Bill</a><hr>
       <a href="./addpurchacebill.php">Add Purchase Bill</a><hr>
-      <a href="#">Add Users</a>
+      <a href="./addpurchacerecipt.php">Purchase Payment Recipt</a><hr>
+      <a href="./addsalesrecipt.php">Sales Payment Recipt</a><hr>
+      <a href="adduser.php">Add Users</a>
       </div>
     </div>
     <div class="navbar-menus">
@@ -57,6 +59,8 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
       <a href="coustomer_details.php"> Customer Details</a><hr>
       <a href="company_details.php"> Company Details</a><hr>
       <a href="itemdetails.php">View Item Details</a><hr>
+      <a href="itemdetails.php">View Sales Bill</a><hr>
+      <a href="itemdetails.php">View Purchase Bill</a><hr>
       <a href="#">user details</a><hr>
       <a href="pricelist.php">Price List</a>
       </div>
@@ -64,7 +68,7 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
     <div class="navbar-menus">
       <button class="dropbtn">Update</button>
       <div class="dropdown-content">
-      <a href="#" >Customer Deatils</a><hr>
+      <a href="./update_cus_det.php" >Customer Deatils</a><hr>
       <a href="#" >Sales Bill</a><hr>
       <a href="#" >Purchase Bill</a><hr>
       <a href="./pricelist-update.php" >Price List</a>
@@ -83,6 +87,7 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
 
   <span>
   </div>
+  <div class="dashbords">
     <div class="dashbord">
     <div class="dash-text">
     Amount Sold
@@ -128,6 +133,7 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
     ?>
     <h2>&#x20b9;<?php echo $totsold;?></h2>
       </div>
+    </div>
     </div>
   </span>
 </body>

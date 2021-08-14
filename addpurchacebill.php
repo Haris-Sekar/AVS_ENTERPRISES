@@ -1,14 +1,26 @@
 <?php
 
 include('frd.php');
+$sql1="SELECT * FROM purchase_bill ORDER BY bill_no DESC LIMIT 1";
+$res1=mysqli_query($conn,$sql1);
+$row=mysqli_fetch_array($res1,MYSQLI_ASSOC);
+$bill_min=$row['bill_no']+1;
 ?>
-<button class="btn-home"><a href="home.php">Home</a></button>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+<script src="addsalesrecipt.js"></script>
+</head>
 <form action="" method="post" class="form-additem">
     <div class="form-items">
     <label>Bill Number:</label>
-    <input type="number" name="billno" class="text-feild" autocomplete="off" ><br>
+    <input type="number" name="billno" class="text-feild" autocomplete="off" min="<?php echo $bill_min; ?>" id="bill_no"><br>
+    <label for="data">Bill Date:</label>
+    <input type="date" name="billdate" class="text-feild" placeholder="Bill Date"><br>
     <label>Company Name:</label>
-    <select name="cname" class="text-feild">
+    <select name="cname" style="width:205px;">
+    <option value="">Select a Company</option>
     <?php 
         $qurey="SELECT * FROM buyer_compnay_reg;";
         $result=mysqli_query($conn,$qurey);
@@ -69,3 +81,10 @@ if(isset($_POST['submit'])){
 }
 
 ?>
+
+<script>
+        var input=document.getElementById('bill_no');
+        input.oninvalid=function(event){
+            event.target.setCustomValidity('Bill Number already exits');
+        }
+    </script>

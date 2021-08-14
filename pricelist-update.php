@@ -1,7 +1,6 @@
 <?php
 include('frd.php');
 ?>
-<button class="btn-home"><a href="home.php">Home</a></button>
 
 <form method="post" enctype="multipart/form-data" class="pricelist-update-form">
     <label>Price List File Name:</label>

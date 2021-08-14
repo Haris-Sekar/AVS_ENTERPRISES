@@ -1,7 +1,6 @@
 <?php
 include("frd.php");
 ?>
-<button class="btn-home"><a href="home.php">Home</a></button>
 <table class="table-pricelist">
   <tr>
     <th>#</th>

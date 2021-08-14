@@ -2,8 +2,7 @@
 include("frd.php");
 
 ?>
-<button class="btn-home"><a href="home.php">Home</a></button>
-<br>
+<div class="cus_det">
 <h2 id="filter-text">Filters</h2+>
 <form action="" method="post">
 <input type="search" name="name_filter" placeholder="Search by Name" class="searchbar" autocomplete="off"> 
@@ -18,6 +17,7 @@ include("frd.php");
         <th>Main Area</th>
         <th>Address</th>
         <th>Total Balance</th>
+        <th>View</th>
     </tr>
     <?php 
     if(isset($_POST['submit'])){
@@ -29,12 +29,13 @@ include("frd.php");
         $result3=mysqli_query($conn,$qurey3);
         while($row3=mysqli_fetch_array($result2,MYSQLI_ASSOC) and $row4=mysqli_fetch_array($result3,MYSQLI_ASSOC)){?>
     <tr>
-        <th><?php echo $row3['shop_name']; ?></th>
+        <th><?php echo $row3['shop_name']; $sname=$row3['shop_name']; ?></th>
         <th><?php echo $row3['phone_number']; ?></th>
         <th><?php echo $row3['gst_number']; ?></th>
         <th><?php echo $row3['area_name']; ?></th>
         <th><?php echo $row3['address']; ?></th>
         <th><?php echo $row4 ['balance']; ?></th>
+        <th><button  type="submit" name="details"><a href="cusdet.php?cname=<?php echo $sname; ?>?>"> Details</a></button></th>
     </tr>
         <?php
     }
@@ -47,12 +48,15 @@ include("frd.php");
     $result1=mysqli_query($conn,$qurey1);
     while($row=mysqli_fetch_array($result,MYSQLI_ASSOC) and $row1=mysqli_fetch_array($result1,MYSQLI_ASSOC)){?>
     <tr>
-        <th><?php echo $row['shop_name']; ?></th>
+        <th><?php echo $row['shop_name']; $sname=$row['shop_name'];?></th>
         <th><?php echo $row['phone_number']; ?></th>
         <th><?php echo $row['gst_number']; ?></th>
         <th><?php echo $row['area_name']; ?></th>
         <th><?php echo $row['address']; ?></th>
         <th><?php echo $row1['balance']; ?></th>
+        <th><button  type="submit" name="details" class="button"><a href="cusdet.php?cname=<?php echo $sname; ?>"  > Details</a></button></th>
+
     </tr>
     <?php } }?>
 </table>
+</div>
