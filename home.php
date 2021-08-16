@@ -62,7 +62,6 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
       <a href="itemdetails.php">View Item Details</a><hr>
       <a href="./view_sales_bill.php">View Sales Bill</a><hr>
       <a href="./view_purchace_bill.php">View Purchase Bill</a><hr>
-      <a href="./userdet.php">user details</a><hr>
       <a href="pricelist.php">Price List</a>
       </div>
     </div>
@@ -70,7 +69,7 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
       <button class="dropbtn">Update</button>
       <div class="dropdown-content">
       <a href="./update_cus_det.php" >Customer Deatils</a><hr>
-      <a href="#" >Sales Bill</a><hr>
+      <a href="./sales_bill_edit.php" >Sales Bill</a><hr>
       <a href="#" >Purchase Bill</a><hr>
       <a href="./pricelist-update.php" >Price List</a>
       </div>

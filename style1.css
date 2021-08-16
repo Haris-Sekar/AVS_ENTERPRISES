@@ -479,6 +479,7 @@ color: white;
   height: 30px;
   border-radius: 5px;
   box-shadow: 0 3px #999;
+  position: relative;
 
 }
 .button:hover{
@@ -486,6 +487,37 @@ color: white;
   color: black;
 }
 .button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button1{
+  border: none;
+  font-family: 'Cairo', sans-serif;
+  cursor: pointer;
+  background-color: #6154fe;
+  color: white;
+  width: auto;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 0 3px #999;
+  position: relative;
+  left: 50px;
+  width: 100px;
+
+}
+.button1 a{
+  display: inline-block;     
+   position: relative;    
+   z-index: 1;     
+   padding: 2em;     
+   margin: -2em;
+}
+.button1:hover{
+  background-color: #4CAF50;
+  color: black;
+}
+.button1:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -590,6 +622,7 @@ div[disabled=disabled] {
   font-family: 'Cairo', sans-serif;
   border: none;
   color: white;
+  cursor: pointer;
 
 
 }
