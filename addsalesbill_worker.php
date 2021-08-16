@@ -1,6 +1,6 @@
 <?php
 
-include('frd.php');
+include('frduser.php');
 $sql1="SELECT * FROM sales_bill ORDER BY bill_no DESC LIMIT 1";
 $res1=mysqli_query($conn,$sql1);
 $row=mysqli_fetch_array($res1,MYSQLI_ASSOC);
@@ -78,8 +78,6 @@ if(isset($_POST['submit'])){
             ?>
             <h2 id="stsmsg">Status:<font color="red"> Bill Number already exist!</font></h2>
             <?php
-                    header("Refresh:5");
-
         }
         else{
 

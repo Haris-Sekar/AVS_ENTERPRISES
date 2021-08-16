@@ -5,6 +5,8 @@ include "conn.php";
 <html>
 <head>
   <title>AVS ENTERPRISES</title>
+  <link rel="shortcut icon" href="./avs_logo.png" />
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -28,7 +30,7 @@ include "conn.php";
         <div class="container">
             <div class="row">
                 <div class="col-md-6 order-md-2">
-                    <img src="LOGO.jfif" alt="Image" class="img-fluid">
+                    <img src="./avs_logo.png" alt="Image" class="img-fluid">
                 </div>
                 <div class="col-md-6 contents">
                     <div class="row justify-content-center">
@@ -63,11 +65,11 @@ include "conn.php";
 if(isset($_POST['submit'])){
     $user=$_POST['uname'];
     $pass=$_POST['pass'];
-    $query="SELECT * FROM admin WHERE username='$user' AND password='$pass';";
+    $query="SELECT * FROM admin WHERE username='$user';";
     $res=mysqli_query($conn,$query);
     while($row=mysqli_fetch_array($res, MYSQLI_ASSOC))
     {
-        if (mysqli_num_rows($res)==1 ) 
+        if ($pass==$row['password'] ) 
         {
             if($row['autho']=="admin")
             {
@@ -85,7 +87,10 @@ if(isset($_POST['submit'])){
         }
         else
         {
-            echo "<script>alert('Incorrect password or username');</script>";
+           ?><script>
+               alert('Incorrect Username or Password');
+               </script>
+        <?php
         }
 }
 }

@@ -53,20 +53,13 @@ include('./frd.php')
                 <li>Area Name: <?php echo $area; ?><input type="text" name="main_area" placeholder="Enter the new Main area" id="text-feild"><input type="submit" value="Change" class="btn-submit1" name="area_submit"><input type="text" name="sname" id="" value="<?php echo $cname ;?>" hidden></li><br><hr>
                 <li id="textarea-address">Address: <?php echo $address; ?> <input type="text" name="address" id="text-feild" placeholder="Enter the new Address"><input type="submit" value="Change" class="btn-submit1" name="address_submit"> <input type="text" name="sname" id="" value="<?php echo $cname ;?>" hidden></li><br><hr>
             </ul>
-            </form>
-        </div>
+            </div>
+        </form>
         
     
 <?php
     }
     ?>
-    <script>
-        var input=document.getElementById('bill_no');
-        input.oninvalid=function(event){
-            event.target.setCustomValidity('Bill Number already exits');
-        }
-    </script>
-
 <?php 
 if(isset($_POST['shopname_submit'])){
     $new_cname=$_POST['shopname'];

@@ -255,6 +255,8 @@ body{
   table {
     border-collapse: collapse;
     width: 100%;
+    font-family: 'Cairo', sans-serif;
+
   }
   .cus_det{
     margin: 0px;
@@ -469,6 +471,8 @@ color: white;
 }
 .button{
   border: none;
+  font-family: 'Cairo', sans-serif;
+  cursor: pointer;
   background-color: #6154fe;
   color: white;
   width: auto;
@@ -637,3 +641,37 @@ color: white;
   
 }
 
+.confirm_delte{
+  border: 2px solid #dfe7fd;
+  font-family: 'Cairo', sans-serif;
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #dfe7fd;
+  border-radius: 10px;
+
+}
+.validateuser{
+  border: 2px solid #dfe7fd;
+  font-family: 'Cairo', sans-serif;
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #dfe7fd;
+  border-radius: 10px;
+  text-align: right;
+  height: 200px;
+
+}
+.validateuser form{
+  position: relative;
+  right: 100px;
+  top: 50px;
+
+}
+.bill_edit_form{
+  position: relative;
+  opacity: 0%;
+}

@@ -21,7 +21,8 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
 <html lang="en">
 
 <head>
-  
+<link rel="shortcut icon" href="./avs_logo.png" />
+
   <link rel="stylesheet" href="style1.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,9 +60,9 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
       <a href="coustomer_details.php"> Customer Details</a><hr>
       <a href="company_details.php"> Company Details</a><hr>
       <a href="itemdetails.php">View Item Details</a><hr>
-      <a href="itemdetails.php">View Sales Bill</a><hr>
-      <a href="itemdetails.php">View Purchase Bill</a><hr>
-      <a href="#">user details</a><hr>
+      <a href="./view_sales_bill.php">View Sales Bill</a><hr>
+      <a href="./view_purchace_bill.php">View Purchase Bill</a><hr>
+      <a href="./userdet.php">user details</a><hr>
       <a href="pricelist.php">Price List</a>
       </div>
     </div>
