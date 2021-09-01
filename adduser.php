@@ -29,7 +29,7 @@ include('./frd.php');
 <?php 
 
 if(isset($_POST['submit'])){
-    $pass=$_POST['cpass'];
+    $pass=md5($_POST['cpass']);
     $sql="SELECT * FROM `admin` WHERE username='$user';";
     $res=mysqli_query($conn,$sql);
     $row1=mysqli_fetch_array($res);
@@ -49,7 +49,7 @@ if(isset($_POST['submit'])){
 }
 if(isset($_POST['add'])){
     $new_user=$_POST['username'];
-    $new_pass=$_POST['newuserpass'];
+    $new_pass=md5($_POST['newuserpass'])    ;
     $autho=$_POST['autho'];
     $sql1="INSERT INTO admin(`username`, `password`, `autho`) VALUES ('$new_user','$new_pass','$autho')";
     $res=mysqli_query($conn,$sql1);

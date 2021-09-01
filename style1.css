@@ -708,3 +708,37 @@ color: white;
   position: relative;
   opacity: 0%;
 }
+.delete_user{
+  border: 2px solid #dfe7fd;
+  font-family: 'Cairo', sans-serif;
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #dfe7fd;
+  border-radius: 10px;
+  visibility: hidden;
+}
+.delete_user1{
+  border: 2px solid #dfe7fd;
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #dfe7fd;
+  border-radius: 10px;
+  visibility: hidden; 
+  position: relative;
+  top: -200px;
+}
+.delete_user1 form{
+  margin: auto;
+  position: relative;
+  right: 70px;
+  top: 70px;
+  text-align: right;
+}

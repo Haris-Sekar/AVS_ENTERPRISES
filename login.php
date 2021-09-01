@@ -64,7 +64,8 @@ include "conn.php";
 
 if(isset($_POST['submit'])){
     $user=$_POST['uname'];
-    $pass=$_POST['pass'];
+    $pass1=$_POST['pass'];
+    $pass=md5($pass1);
     $query="SELECT * FROM admin WHERE username='$user';";
     $res=mysqli_query($conn,$query);
     while($row=mysqli_fetch_array($res, MYSQLI_ASSOC))

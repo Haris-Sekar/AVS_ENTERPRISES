@@ -62,7 +62,8 @@ $qurey="SELECT  * FROM admin WHERE username='$user'";
       <a href="itemdetails.php">View Item Details</a><hr>
       <a href="./view_sales_bill.php">View Sales Bill</a><hr>
       <a href="./view_purchace_bill.php">View Purchase Bill</a><hr>
-      <a href="pricelist.php">Price List</a>
+      <a href="pricelist.php">Price List</a><hr>
+      <a href="manage_users.php">Manage Users</a>
       </div>
     </div>
     <div class="navbar-menus">
